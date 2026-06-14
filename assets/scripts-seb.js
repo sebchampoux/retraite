@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		minutes: 0,
 		seconds: 0,
 		words: {
+			months: { root: 'mois', lambda: (root) => root },
 			days: { root: 'jour', lambda: (root, n) => n > 1 ? root + 's' : root },
 			hours: { root: 'heure', lambda: (root, n) => n > 1 ? root + 's' : root },
 			minutes: { root: 'minute', lambda: (root, n) => n > 1 ? root + 's' : root },
